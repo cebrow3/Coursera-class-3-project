@@ -23,3 +23,10 @@ activity labels and corresponding numbers:
 4- sitting
 5- standing
 6- laying
+
+feature names:
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions
+'Acc': acceleration
+'Jerk': Jerk signals, the body linear acceleration and angular velocity derived in time 
+'Mag': magnitude
+'Gyro': gyroscope
