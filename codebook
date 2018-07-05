@@ -1,2 +1,25 @@
 ##Codebook
-describes variables, data and any transformations
+
+activitylabels: activities in dataset (walking, walking upstairs, walking downstairs, sitting, standing, laying)
+allactivity: activity numbers from trainactivity and testactivity bound together
+alldata: traindata and testdata row bound together, all the raw data from the accelerometer and gyroscope readings
+allsubjects: trainsubject and trestsubject bound together, all the subject numbers
+datafeatures: the descriptions of all the different readouts for the raw data from the accelerometer and gyroscope, variable names
+meansddata: subset of alldata that only has data from features that include either mean or standard deviation
+testactivity: activity numbers from test group
+testdata: raw data of all accelerometer and gyroscope readings for subjects in test group
+testsubject: subject number in the test group
+tidydata: average of each variable grouped by subject and then by activity
+trainactivity: activity numbers from train group
+traindata: raw data of all accelerometer and gyroscope readings for subjects in train group
+trainsubject: subject number in the train group
+
+From original data:
+
+activity labels and corresponding numbers:
+1- walking
+2- walking upstairs
+3- walking downstairs
+4- sitting
+5- standing
+6- laying
