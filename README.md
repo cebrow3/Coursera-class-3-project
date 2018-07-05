@@ -1,2 +1,8 @@
 # Coursera-class-3-project
-This project used data from Samsung Galaxy S smartphone accelerometers
+This project used data from Samsung Galaxy S smartphone accelerometer and gyroscope. Thirty volunteers performed six different activities (walking, walking upstairs, walking downstairs, sitting, standing, laying) for which data was collected.
+Originally the data was separated into testing and training data. The overall goal of the code is to combine the data, extract the measurements for mean and standard deviation, label the variables and activities, and finally create a tidy dataset with the average of each vairable for each activity and each subject.
+
+Once the directory has been set and the data downloaded into R to work with, the run_analysis script combines the test data and training data by binding the rows together. Next the features are adjusted by making all lowercase, the 't' for time is switched to 'time', the 'f' for frequency is switched to 'frequency', and the 'std' for standard deviation is switched to 'sd' (which is a more commonly used abbreviation of standard deviation). These feature names are then added to the data as the column names.
+From the column names we can then take out the data that only pertains to mean and standard deviation, creating a new subset. 
+Next the subject numbers are combined by row binding the train subjects and test subjects data. The same was done for the activity numbers. The activity label names are then all modified by making the names all lowered and the underscore removed. The subjects and activity was then added to the mean and standard deviation subset data by binding the columns. Then the activity numbers were then merged with the activity labels.
+The final steps take the data and group by subject and then activity and then takes the mean of the grouped features. This data is then written into a table to create the final tidy data set. 
